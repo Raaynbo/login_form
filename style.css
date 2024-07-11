@@ -71,12 +71,29 @@ main {
 	flex: 1 1 300px;
 }
 
+input {
+	border-radius: 0.3rem;
+	box-shadow: 0.123em 0.2em 5px var(--black);
+	display: block;
+	transition-duration: 0.5s;
+	padding: 0.3em;
+	border: 0.1rem solid var(--blue);
+}
+
+input:focus {
+	transform: scale(1.1);
+	padding: 0.3em;
+}
+
 legend {
 	display: block;
-	padding-top: 2rem;
+	padding: 2rem;
 	width: 100%;
-	font-size: 22px;
+	font-size: 27px;
+	font-weight: bold;
+	font-style: italic;
 }
+
 
 footer {
 	width: 100%;
