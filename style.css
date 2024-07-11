@@ -80,6 +80,14 @@ input {
 	border: 0.1rem solid var(--blue);
 }
 
+input:invalid {
+	border: 0.1rem solid red;
+}
+
+input:valid {
+	border: 0.1rem solid green;
+}
+
 input:focus {
 	transform: scale(1.1);
 	padding: 0.3em;
@@ -88,6 +96,7 @@ input:focus {
 legend {
 	display: block;
 	padding: 2rem;
+	padding-bottom: 0;
 	width: 100%;
 	font-size: 27px;
 	font-weight: bold;

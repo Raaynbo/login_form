@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Login Form Owlong</title>
 	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" defer src="main.js"></script>
 </head>
 
 <body>
@@ -24,32 +25,34 @@
 			<form action="">
 				<div class="fieldzone">
 					<fieldset class="form_zone">
-						<legend>Sign up to Owlong
+						<legend>WELCOME ABOARD
 						</legend>
 						<label for="firstname">First Name
-							<input for="firstname" id="firstname" type="text"
+							<input for="firstname" id="firstname" type="text" required
 								placeholder="first name"></input>
 						</label>
 						<label for="lastname">Last Name
-							<input for="lastname" id="lastname" type="text"
+							<input for="lastname" id="lastname" type="text" required
 								placeholder="Last name"></input>
 						</label>
-						<label for="phone_num">Phone Number
-							<input for="phonenum" id="phonenum" type="number"
-								placeholder="0238902749237"></input>
+						<label for="phonenum">Phone Number
+							<input for="phonenum" id="phonenum" type="tel" required
+								pattern="[0-9]{10}" placeholder="00020020"></input>
 						</label>
 
 						<label for="Email">Email
-							<input for="email" id="email" type="text"
+							<input for="email" id="email" type="email" required
+								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
 								placeholder="email"></input>
 						</label>
 
 						<label for="passwrd">password
-							<input for="passwrd" id="passwrd" type="password"></input>
+							<input for="passwrd" required id="passwrd"
+								type="password"></input>
 						</label>
 
 						<label for="passwrd_conf">Confirm passwod
-							<input for="passwrd_conf" id="passwrd_conf"
+							<input for="passwrd_conf" required id="passwrd_conf"
 								type="password"></input>
 						</label>
 					</fieldset>
